@@ -1,28 +1,26 @@
-ï»¿/*
-    Jvav Programmer Ver.1.2 Pre3 Preview
+/*
+    Jvav Programmer Ver.02w05c Snapshot
     By 30266
-    Compilation time 2020-04-19 21:00
+    Compilation time 2020-04-28 11:30
+    GCC O5
 */
 #include <iostream>
-#include <fstream>
+#include<fstream>
 #include <windows.h>
 using namespace std;
 int main()
 {
-    cout << "Initializing Program...\n";
-    string language;
-    string å‘½ä»¤, ç±»å‹, è¾“å…¥å­—ç¬¦ä¸²;
-    string command, type, inputcharacter;
+    cout << "Initializing program...\n";
+    string language,command, type, inputcharacter;
     language = "English";
     cout << "Configuring the online update service...\n";
     system("del upgrade.txt");
     system("cls");
     /*en_main*/
-en_main:
+    en_main:
     cout << "--------------------------------------------\n";
-    cout << "| Jvav Program                Ver.1.2 Pre3 |\n";
-    cout << "| By Dr.ZhangHaoYang                       |\n";
-    cout << "| Programmer: 30266 & TZG-Official         |\n";
+    cout << "| Jvav Program                Ver.1.2 Pre2 |\n";
+    cout << "| By Dr.ZhangHaoYang      Programmer 30266 |\n";
     cout << "| Enter'help'to get help!                  |\n";
     cout << "| Online push updates are now supported!   |\n";
     cout << "--------------------------------------------\n";
@@ -31,7 +29,7 @@ main:
     cin >> command;
     if (command == "help") {
         cout << "----Jvav help------Page(1/1)---\n";
-        cout << "  help [Page]:Get help\n  leave:Exit Jvav\n  output:Output characters\n  input:Input characters\n  upgrade:Online detection of version updates\n  language:setting the program language\n  info:Jvav information\n";
+        cout << "  help [page]:Get help\n  leave:Exit Jvav\n  output:Output characters\n  input:Input characters\n  upgrade:Online detection of version updates\n  language:setting the program language\n  info:Jvav information\n";
         cout << "----Jvav help------Page(1/1)---\n";
         goto main;
     }
@@ -39,7 +37,7 @@ main:
         cout << "Are you sure to leave jvav?(y/n)";
         string L;
         cin >> L;
-        if (L == "y" or L == "yes") {
+        if (L == "y") {
             return 0;
         }
         else {
@@ -53,7 +51,7 @@ main:
         goto main;
     }
     else if (command == "info") {
-        cout << "Jvav Programm Ver.1.2 Pre3\nIt's just a joke, but we still make it, and the joke was first brought by Zhang Haoyang.\nThe person writing the program is 30266.\n";
+        cout << "Jvav Programm Ver.1.2 Pre1\nIt's just a joke, but we still make it, and the joke was first brought by Zhang Haoyang.\nThis version supports running away from jdk.\nThe person writing the program is 30266.\n";
         goto main;
     }
     else if (command == "input") {
@@ -66,13 +64,13 @@ main:
         goto upgrade;
     }
     else if (command == "language") {
-        cout << "Please enter the setting language(English/ç®€ä½“ä¸­æ–‡):";
+        cout << "Please enter the setting language(English/¼òÌåÖĞÎÄ):";
         string language;
         cin >> language;
         if (language == "English") {
             goto main;
         }
-        else if (language == "ç®€ä½“ä¸­æ–‡") {
+        else if (language == "¼òÌåÖĞÎÄ") {
             system("cls");
             goto ch;
         }
@@ -88,115 +86,96 @@ main:
 
     /*cn_main*/
 ch:
-    language = "ç®€ä½“ä¸­æ–‡";
+    language = "¼òÌåÖĞÎÄ";
     cout << "--------------------------------------------\n";
-    cout << "| Jvavç¼–è¯‘å™¨               ç‰ˆæœ¬ï¼š1.2  Pre3 |\n";
-    cout << "| ä½œè€…ï¼šå¼ æµ©æ´‹å¤§å¸ˆ                         |\n";
-    cout << "| ç¼–å†™è€…: 30266 & TZG-Official             |\n";
-    cout << "| é€šè¿‡è¾“å…¥'å¸®åŠ©'æ¥è·å¾—å¸®åŠ©                 |\n";
-    cout << "| ç°å·²æ”¯æŒåœ¨çº¿æ¨é€æ›´æ–°ï¼                   |\n";
+    cout << "| Jvav±àÒëÆ÷             °æ±¾£º1.2 Ô¤ÀÀ°æ3 |\n";
+    cout << "| ×÷Õß£ºÕÅºÆÑó´óÊ¦  ±àĞ´Õß£º30266,aa11ss55 |\n";
+    cout << "| Í¨¹ıÊäÈë'°ïÖú'À´»ñµÃ°ïÖú                 |\n";
+    cout << "| ÏÖÒÑÖ§³ÖÔÚÏßÍÆËÍ¸üĞÂ£¡                   |\n";
     cout << "--------------------------------------------\n";
 cn_main:
     cout << "Jvav>";
-    cin >> å‘½ä»¤;
-    if (å‘½ä»¤ == "å¸®åŠ©") {
-        cout << "----Jvavå¸®åŠ©---ç¬¬(1/1)é¡µ----\n";
-        cout << "  å¸®åŠ© [é¡µç ]:è·å–å¸®åŠ©\n  é€€å‡º:é€€å‡ºJvav\n  è¾“å‡º:è¾“å‡ºå­—ç¬¦\n  è¾“å…¥:è¾“å…¥å­—ç¬¦ä»¥ä¾¿è°ƒç”¨\n  æ›´æ–°:åœ¨çº¿æ£€æµ‹ç‰ˆæœ¬æ›´æ–°\n  è¯­è¨€:è®¾ç½®Jvavçš„è¯­è¨€\n  å…³äº:è·å–å…³äºJvavçš„ä¿¡æ¯\n";
-        cout << "----Jvavå¸®åŠ©---ç¬¬(1/1)é¡µ----\n";
+    cin >> command;
+    if (command == "°ïÖú") {
+        cout << "----Jvav°ïÖú---µÚ(1/1)Ò³----\n";
+        cout << "  °ïÖú [Ò³Âë]:»ñÈ¡°ïÖú\n  ÍË³ö:ÍË³öJvav\n  Êä³ö:Êä³ö×Ö·û\n  ÊäÈë:ÊäÈë×Ö·ûÒÔ±ãµ÷ÓÃ\n  ¸üĞÂ:ÔÚÏß¼ì²â°æ±¾¸üĞÂ\n  ÓïÑÔ:ÉèÖÃJvavµÄÓïÑÔ\n  ¹ØÓÚ:»ñÈ¡¹ØÓÚJvavµÄĞÅÏ¢\n";
+        cout << "----Jvav°ïÖú---µÚ(1/1)Ò³----\n";
         goto cn_main;
     }
-    else if (å‘½ä»¤ == "é€€å‡º") {
-        cout << "ä½ ç¡®å®šè¦é€€å‡ºJvavå—ï¼Ÿ(æ˜¯/å¦)";
-        string é€€;
-        cin >> é€€;
-        if (é€€ == "æ˜¯" or é€€ == "y" or é€€ == "yes") {
+    else if (command == "ÍË³ö") {
+        cout << "ÄãÈ·¶¨ÒªÍË³öJvavÂğ£¿(ÊÇ/·ñ)";
+        cin >> command;
+        if (command == "ÊÇ") {
             return 0;
         }
         else {
             goto cn_main;
         }
     }
-    else if (å‘½ä»¤ == "è¾“å‡º") {
-        cout << "Jvav>è¾“å‡º>";
-        cin >> ç±»å‹;
-        cout << ç±»å‹ << endl;
+    else if (command == "Êä³ö") {
+        cout << "Jvav>Êä³ö>";
+        cin >> type;
+        cout << type << endl;
         goto cn_main;
     }
-    else if (å‘½ä»¤ == "è¾“å…¥") {
-        cout << "Jvav>è¾“å…¥>";
-        cin >> è¾“å…¥å­—ç¬¦ä¸²;
+    else if (command == "ÊäÈë") {
+        cout << "Jvav>ÊäÈë>";
+        cin >> inputcharacter;
         goto cn_main;
     }
-    else if (å‘½ä»¤ == "å…³äº") {
-        cout << "Jvavç¼–ç¨‹å™¨ï¼Œç‰ˆæœ¬: 1.2 Beta3ã€‚\nè¿™åªæ˜¯ä¸€ä¸ªæ¢—ï¼Œä½†æ˜¯æˆ‘ä»¬ä¾ç„¶æŠŠå®ƒå˜æˆäº†ç°å®ã€‚æœ€æ—©æ˜¯å¼ æµ©æ´‹æå‡ºçš„è¿™ä¸ªæ¢—ã€‚\nè¯¥ç¨‹åºç¼–å†™è€…ä¸º30266ã€‚\n";
+    else if (command == "¹ØÓÚ") {
+        cout << "Jvav±à³ÌÆ÷£¬°æ±¾Îª1.2Ô¤ÀÀ°æ1¡£\nÕâÖ»ÊÇÒ»¸ö¹££¬µ«ÊÇÎÒÃÇÒÀÈ»°ÑËü±ä³ÉÁËÏÖÊµ¡£×îÔçÊÇÕÅºÆÑóÌá³öµÄÕâ¸ö¹£¡£\n¸Ã°æ±¾Ö§³ÖÍÑÀëjdkµÄÔËĞĞ¡£\n¸Ã³ÌĞò±àĞ´ÕßÎª30266¡£\nGithub¿ªÔ´µØÖ·:github.com/TZG-official/Jvav-Windows(Windows ¶ËÔ´´úÂë)\nÍøÒ³Ô´´úÂë:github.com/TZG-official/Jvav\n";
         goto cn_main;
     }
-    else if (å‘½ä»¤ == "æ›´æ–°") {
-        cout << "Jvav>æ›´æ–°>æ­£åœ¨è·å–ç‰ˆæœ¬åˆ—è¡¨...\n";
+    else if (command == "¸üĞÂ") {
+        cout << "Jvav>¸üĞÂ>ÕıÔÚ»ñÈ¡°æ±¾ÁĞ±í...\n";
         goto upgrade;
     }
-    else if (å‘½ä»¤ == "è¯­è¨€") {
-        cout << "è¯·è¾“å…¥æ‚¨è¦åˆ‡æ¢çš„è¯­è¨€(ç®€ä½“ä¸­æ–‡/English):";
-        string è¯­è¨€;
-        cin >> è¯­è¨€;
-        if (è¯­è¨€ == "ç®€ä½“ä¸­æ–‡") {
+    else if (command == "ÓïÑÔ") {
+        cout << "ÇëÊäÈëÄúÒªÇĞ»»µÄÓïÑÔ(¼òÌåÖĞÎÄ/English):";
+        cin >> language;
+        if (language == "¼òÌåÖĞÎÄ") {
             goto cn_main;
         }
-        else if (è¯­è¨€ == "English") {
+        else if (language == "English") {
             system("cls");
             language = "English";
             goto en_main;
         }
         else {
-            cout << "æœªçŸ¥çš„è¯­è¨€ã€‚\n";
+            cout << "Î´ÖªµÄÓïÑÔ¡£\n";
             goto cn_main;
         }
     }
     else {
-        cout << "æœªçŸ¥çš„å‘½ä»¤ï¼\n";
+        cout << "Î´ÖªµÄÃüÁî£¡\n";
         goto cn_main;
     }
-    /*upgrade*/
-upgrade:
+/*upgrade*/
+    upgrade:
     system("java -jar upgrade.jar > upgrade.txt");
     ifstream readFile("upgrade.txt");
     int ret;
-    readFile >> ret; 
+    readFile >> ret;
     readFile.close();
     if (ret == -1) {
         if (language == "English") {
             cout << "Jvav>upgrade>Error! The update failed! Because the version list cannot be obtained on the authentication server!\n";
             goto main;
         }
-        else if (language == "ç®€ä½“ä¸­æ–‡") {
-            cout << "Jvav>æ›´æ–°>é”™è¯¯ï¼æ— æ³•ä»è®¤è¯æœåŠ¡å™¨è·å–ç‰ˆæœ¬åˆ—è¡¨ï¼\n";
+        else if (language == "¼òÌåÖĞÎÄ") {
+            cout << "Jvav>¸üĞÂ>´íÎó£¡ÎŞ·¨´ÓÈÏÖ¤·şÎñÆ÷»ñÈ¡°æ±¾ÁĞ±í£¡\n";
             goto cn_main;
         }
     }
     else if (ret > 6) {
         if (language == "English") {
-            string up;
-            cout << "Jvav>upgrade>Updated versionavailable for upgrades,do you want to upgrade?(y/n)\n";
-            cin >> up;
-            if (up == "y") {
-                system("start update.exe");
-                return 0;
-            }
-            else {
-                goto main;
-            }
+            cout << "Jvav>upgrade>Updated versionavailable for upgrades, please go to https://30266-official.github.io/updates/Jvav.zip download!\n";
+            goto main;
         }
-        else if (language == "ç®€ä½“ä¸­æ–‡") {
-            string å‡;
-            cout << "æœ‰æ›´æ–°ç‰ˆæœ¬å¯ä¾›å‡çº§ï¼Œæ˜¯å¦å‡çº§ï¼Ÿ(æ˜¯/å¦)\n";
-            cin >> å‡;
-            if (å‡ == "æ˜¯") {
-                system("start update.exe");
-                return 0;
-            }
-            else {
-                goto cn_main;
-            }
+        else if (language == "¼òÌåÖĞÎÄ") {
+            cout << "ÓĞ¸üĞÂ°æ±¾¿É¹©Éı¼¶£¬ÇëÇ°Íùhttps://30266-official.github.io/updates/Jvav.zipÏÂÔØ£¡\n";
+            goto cn_main;
         }
     }
     else if (ret == 6) {
@@ -205,7 +184,7 @@ upgrade:
             goto main;
         }
         else {
-            cout << "æ­å–œä½ ï¼ä½ å·²å‡çº§è‡³æœ€æ–°ç‰ˆæœ¬ï¼\n";
+            cout << "¹§Ï²Äã£¡ÄãÒÑÉı¼¶ÖÁ×îĞÂ°æ±¾£¡\n";
             goto cn_main;
         }
     }
@@ -215,8 +194,8 @@ upgrade:
             goto main;
             cout << ret;
         }
-        else if (language == "ç®€ä½“ä¸­æ–‡") {
-            cout << "Jvav>æ›´æ–°>é”™è¯¯ï¼æˆ‘ä»¬æ— æ³•è·å–ç‰ˆæœ¬åˆ—è¡¨ï¼Œå› ä¸ºæ‚¨çš„ç‰ˆæœ¬æ˜¯æ¥è‡ªæœªæ¥çš„ç‰ˆæœ¬ï¼Œæ•…æˆ‘ä»¬ä¸æä¾›æ”¯æŒã€‚\n";
+        else if (language == "¼òÌåÖĞÎÄ") {
+            cout << "Jvav>¸üĞÂ>´íÎó£¡ÎÒÃÇÎŞ·¨»ñÈ¡°æ±¾ÁĞ±í£¬ÒòÎªÄúµÄ°æ±¾ÊÇÀ´×ÔÎ´À´µÄ°æ±¾£¬¹ÊÎÒÃÇ²»Ìá¹©Ö§³Ö¡£\n";
             goto cn_main;
         }
     }
