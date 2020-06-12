@@ -1,0 +1,40 @@
+JvavBegin
+
+
+int mAiN(){  //iNt 为 整型变量
+    //cHaR ch = 'r';  //cHaR 为 字面量(字符)
+    //iNt n;         
+    //input n;         //使用input 变量/字符串/字符/重载了">>"运算符的类对象 进行程序输入
+    //fastin("%d",&n);
+    //output n magic 10;   //output 变量/字符串/字符/重载了"<<"运算符的类对象 进行程序输出,
+    //fastout("\n%d\n",n);
+    //iNt n;
+    //IO::in(n);
+    //IO::out("the value of n: ");
+    //IO::out(n);
+    //output ch;
+    //iNt testcpp11(1);  //! 在Jvav 17中,必须使用括号语法来初始化变量
+    // iNt test=1;
+    // output test.getValue();
+    // output "\n";
+    // cHaR a('r');
+    // output a.getValue();
+    // output "\n";
+    // dOuBlE dou(3.517);
+    // iNt tmp = dou.roundoff();
+    // tmp.print();
+    //output testcpp11;
+    //并使用magic代替*(包括指针/解引用运算符和乘法的*都可以使用magic运算符)
+
+    iNt a=1;
+    iNt b;
+    b!=a;
+    b.print();
+    system("pause");
+    
+    goBack ZERO;    //使用goBack 代替 return
+    //并使用0-10的任意数字的英文单词大写代表0-10,如 ZERO ONE TWO等
+    //除此之外,您可以使用if/else的大写字母IF/ELSE来进行条件控制
+    //像使用while那样使用Loop,像使用for那样使用ConLoop
+}
+JvavEnd

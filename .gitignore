@@ -1,5 +1,6 @@
 # Prerequisites
 *.d
+/vscode/
 
 # Compiled Object files
 *.slo
@@ -27,9 +28,5 @@
 *.lib
 
 # Executables
-*.exe
 *.out
 *.app
-debug/*
-.vs/*
-x64/*
